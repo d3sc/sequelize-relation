@@ -14,7 +14,7 @@ export async function getAllProfile(req, res) {
 export async function getProfileById(req, res) {
   const { id } = req.query;
   try {
-    const data = await Profile.findOne({
+    const data = await Profile.create({
       where: {
         UserId: id,
       },

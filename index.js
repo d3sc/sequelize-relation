@@ -2,7 +2,6 @@ import express from "express";
 import "dotenv/config";
 import router from "./routes/router.js";
 import db from "./utils/connection.js";
-import Book from "./model/BookModel.js";
 const app = express();
 const port = process.env.PORT;
 

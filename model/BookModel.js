@@ -28,4 +28,5 @@ const Book = db.define(
     freezeTableName: true,
   }
 );
+
 export default Book;

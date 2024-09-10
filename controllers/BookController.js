@@ -4,7 +4,6 @@ import User from "../model/UserModel.js";
 export async function getAllBooks(req, res) {
   try {
     const data = await Book.findAll();
-
     res.send(data);
   } catch (error) {
     console.log(error);
