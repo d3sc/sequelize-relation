@@ -1,9 +1,12 @@
 import express from "express";
+import bodyParser from "body-parser";
 import "dotenv/config";
 import router from "./routes/router.js";
 import db from "./utils/connection.js";
 const app = express();
 const port = process.env.PORT;
+
+app.use(bodyParser.json());
 
 // await db.sync(
 //   // force digunakan ketika function db.sync dijalankan maka akan mereset semua data yang ada di database
