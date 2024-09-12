@@ -14,7 +14,7 @@ export async function getAllUserById(req, res) {
   const id = req.query.id; // Mendapatkan ID dari req.query.id
   console.log(id);
   try {
-    const data = await User.findAll({
+    const data = await User.findOne({
       where: { id }, // Mencari pengguna berdasarkan ID
     });
 

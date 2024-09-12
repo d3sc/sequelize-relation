@@ -13,7 +13,7 @@ export async function getAllBooks(req, res) {
 export async function getBookShelf(req, res) {
   const { id } = req.query;
   try {
-    const data = await Book.findAll({
+    const data = await Book.findOne({
       where: {
         UserId: id,
       },
